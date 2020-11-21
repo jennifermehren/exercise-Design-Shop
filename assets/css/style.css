@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;0,800;1,200;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    color: #323A45;
+    width: 90vw;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: unset;
+    color: unset;
+}
+
+/* -------Header / nav--------- */
+header{
+    margin: 10px;
+}
+
+nav{
+    display: flex;
+}
+
+nav ul{
+    display: flex;
+    margin-left: auto;
+}
+
+nav li{
+    padding: 15px;
+}
+/* --------main------------- */
+
+.gallery{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery a:nth-of-type(7n+1){
+    grid-column: 1 / -1;
+}
+
+.gallery figure img{
+    width: 100%;
+}
+
+.gallery div{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* ---------- Footer-------- */
+
+footer section{
+    display: flex;
+    margin: 5%;
+    justify-content: space-between;
+}
+
+.last{
+    width: 25%;
+}
+
+.last h3, p, a{
+    padding: 5px;
+    display: block;
+}
+
+.last h3{
+    margin-bottom: 15px;
+}
+
+#disclaimer{
+    color: #848484;
+}
