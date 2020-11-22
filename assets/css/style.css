@@ -9,6 +9,8 @@
 body{
     font-family: 'Karla', sans-serif;
     color: #323A45;
+    font-size: .8rem;
+    margin: 2rem;
 }
 
 .bold{
@@ -24,29 +26,32 @@ a{
     color: unset;
 }
 
-/* -------Header / nav--------- */
-header{
-    margin: 10px;
+a:hover{
+    color: #848484;
 }
 
+/* -------Header / nav--------- */
 nav{
     display: flex;
+    justify-content: baseline;
+}
+
+#logo{
+    font-size: 1rem;
 }
 
 nav ul{
     display: flex;
     margin-left: auto;
+    justify-content: baseline;
 }
 
 nav li{
-    padding: 15px;
+    margin-left: 1.2rem;
 }
 /* --------main------------- */
 
-
-
 .gallery{
-    margin: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
@@ -56,8 +61,13 @@ nav li{
     grid-column: 1 / -1;
 }
 
-.gallery figure img{
+.product-img{
     width: 100%;
+}
+
+.product-img:hover{
+    opacity: .5;
+    transition: opacity 0s ease;
 }
 
 .info-container{
@@ -80,27 +90,27 @@ nav li{
     padding: 0;
 }
 
-
+.brand:hover{
+    text-decoration: underline;
+}
 
 /* ---------- Footer-------- */
 
 footer section{
     display: flex;
-    margin: 5%;
+    margin-top: 3rem;
+    width: 80vw;
     justify-content: space-between;
+    padding: mi
 }
 
-.last{
-    width: 25%;
-}
-
-.last h3, p, a{
-    padding: 5px;
+.end-of-site p, a{
+    padding-bottom: .6rem;
     display: block;
 }
 
-.last h3{
-    margin-bottom: 15px;
+.end-of-site h3{
+    margin-bottom: 2rem;
 }
 
 #disclaimer{
